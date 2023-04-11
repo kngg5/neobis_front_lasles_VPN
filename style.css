@@ -25,7 +25,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 20px 80px;
-    position: relative;
+    
    
     
 }
@@ -82,7 +82,7 @@ body {
 }
 .intro-container {
     display: flex;
-    position: relative;
+    
     
 }
 
@@ -131,7 +131,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 gray;
-    position: relative;
+    
 }
 
 .info {
@@ -151,7 +151,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;   
-    position: relative;
+    
 }
 
 .features-container {
@@ -174,7 +174,7 @@ body {
     width: 40%;
     text-align: left;
     margin-left: 100px;
-    position: relative;
+    
 }
 
 .features-list {
@@ -193,7 +193,7 @@ body {
     margin-top: 100px;
     margin-bottom: 10px;
     padding-top: 50px;
-    position: relative;
+    
     
 }
 
@@ -248,7 +248,7 @@ body {
 .price_plan__content-container {
     display: flex;
     justify-content: space-around;
-    position: relative;
+    
 }
 
 .price_plan__content {
@@ -275,7 +275,7 @@ body {
 .network_locations {
    margin-top:150px ;
    margin: 150px 80px 0 80px;
-   position: relative;
+   
 }
 .network_locations__heading {
     
@@ -307,7 +307,7 @@ body {
 
 .customer_feedbacks {
     margin-bottom: 30px;
-    position: relative;
+    
 }
 
 .feedback-rate {
@@ -369,7 +369,7 @@ body {
     width: 5px;
     height: 10px;
     margin-left: 2px;
-    position: relative;
+    
 }
 
 .swipe_right {
@@ -404,7 +404,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 gray;
     justify-content: space-between;
-    position: relative;
+    
 }
 
 .subscribe_content {
@@ -451,7 +451,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-content: center;
-    position: relative;
+    
     
 }
 
