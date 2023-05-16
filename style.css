@@ -1,34 +1,28 @@
 body {
-    
+    margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
     
     
 }
-
-.header-logo {
-    display: flex;
-    
+button {
+    cursor: pointer;
 }
 
-.intro_page__header {
-    width: 100%;
-    max-height: 100vh;
-    background-color: white;
-    
-}
+.wrapper{
+    margin: 1rem 6rem;
+} 
 
-.intro_page__container{
+.container {
+    margin: 0 5rem;
+    min-height: 1rem;
     display: flex;
-    margin: 0 auto;
     align-items: center;
+    justify-content: center;
     justify-content: space-between;
-    margin: 20px 80px;
-    
-   
-    
 }
+
 
 
 #intro-header__heading {
@@ -36,27 +30,41 @@ body {
     color:#0B132A;
     font-weight: 500;
     align-items: center;
-    
 }
 
 
 
-.intro_page__container a {
+.intro_page__header a {
     text-decoration: none;
     color: #0B132A;
    
 }
+.navbar ul {
+    float: right;
+}
 .navbar li{
    font-size: 17px; 
-   display: inline-block;   
+   display: inline-block;
+   
+   
 }
 
 .navbar a {
     margin-left: 40px;
+    cursor: pointer;
 }
 
 #sign-in {
     font-weight: bold;
+    padding: 1rem 1.50rem;
+    border-radius: 50px;
+    border: 0px solid #F53855;
+}
+
+#sign-in:hover {
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    transition: .7s;
 }
 
 #sign-up {
@@ -64,7 +72,7 @@ body {
     font-weight: bold;
     border: 1px solid #F53855;
     border-radius: 50px;
-    padding: 13px 45px;
+    padding: 1rem 1.50rem;
 }
 
 #sign-up:hover {
@@ -73,6 +81,107 @@ body {
     border: 1px solid #F53855;
     border-radius: 50px;
     background-color: #F53855;
+    transition: .7s;
+}
+
+#menu_bar {
+    display: none;
+    
+}
+
+.intro_page__header label {
+    font-size: 1.50rem;
+    color: #0B132A;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 991px) {
+    .intro_page__header label {
+        display: initial;
+    }
+    .intro_page__header {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header-nav__primary {
+        
+        position: absolute;
+        top: 8%;
+        right: 0px;
+        width: 100%;
+        display: none;
+        
+        
+    }
+    .header-nav__primary  ul {
+        border: 2px solid black;
+        background-color: white;
+        
+    }
+    .header-nav__primary  li  {
+        
+        text-align: center;
+        height: 3rem;
+        display: inline-block;
+        margin-right: 10rem;
+        width: 100%;
+       
+    }
+    .header-nav__primary a{
+        color: black;
+        border-radius: 20px;
+        padding: 0 2rem;
+    }
+    .header-nav__primary a:hover {
+        text-decoration: underline;
+    }
+   
+    
+    
+    #menu_bar:checked  ~  .header-nav__primary{
+        display: initial;
+        
+    }
+    
+    .features-image {
+        
+        
+        width: 500px;
+    }
+    
+    .features-content {
+        width: 1000px;
+        text-align: left;
+    }
+    
+    .subscribe_container {
+        display: flex;
+
+        width: 600px;
+        background-color: white;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 gray;
+        justify-content: space-between;
+        
+        
+    }
+    .subscribe {
+        
+    }
+    
+    .subscribe_content {
+        width: 60%;
+        
+    }
+    
+    .subscribe_now__button {
+      width: 30%;
+    }
+    
+    
 }
 
 .intro_page__main {
@@ -127,7 +236,7 @@ body {
     max-height: 200px;
     height: 100px;
     background-color: white;
-    margin: 127px 150px 0 150px;
+    margin: 5rem auto;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 gray;
@@ -156,7 +265,10 @@ body {
 
 .features-container {
     padding-top: 95px;
+    margin: 0 10rem;
     display: flex;
+    justify-content: space-around;
+    
     
 }
 
@@ -167,13 +279,15 @@ body {
 }
 
 .features-image {
+    
     width: 50%;
 }
 
 .features-content {
     width: 40%;
+    
     text-align: left;
-    margin-left: 100px;
+    
     
 }
 
@@ -183,8 +297,8 @@ body {
     
 }
 
-.features-list:before {
-    content:url(check-circle.svg);
+.features-list::before {
+    content:url(icons/check-circle.svg);
     margin-right: 10px;
 }
 
@@ -238,6 +352,7 @@ body {
     border: 2px solid #F53838;
     border-radius: 50px;
     background-color: white;
+    transition: .7s;
 }
 
 .price_plan__select-button:hover {
@@ -262,6 +377,13 @@ body {
     border-radius: 10px;
     align-items: center;
     background-color: white;
+    cursor: pointer;
+}
+
+
+.price_plan__content:hover {
+    border: 1px solid red;
+    transition: .7s;
 }
 
 .price_plan__info-top {
@@ -295,10 +417,16 @@ body {
     color: #4F5665;
 }
 
-.network_locations__image {
-    margin-top: 155px;
+.network_locations__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
+.network_locations__image {
+   
+    display: flex;
+    justify-content: center;
+}
 .partners {
     display: flex;
     justify-content: space-between;
@@ -340,7 +468,7 @@ body {
 
 .customer_feedbacks__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .content-text {
@@ -398,13 +526,14 @@ body {
     max-width: 1000px;
     max-height: 300px;
     height: 100px;
+    width: 800px;
     background-color: white;
-    margin: 120px 150px 20px 150px;
-    padding: 30px 50px 80px 20px;
+    margin: 2rem auto;
+    padding: 5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 gray;
     justify-content: space-between;
-    
+    text-align: left;
 }
 
 .subscribe_content {
@@ -413,7 +542,7 @@ body {
 
 .subscribe__heading {
     font-weight: 500;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 32px;
     display: flex;
     align-items: center;
@@ -429,22 +558,22 @@ body {
     color: #4F5665;
 }
 
-
+.subscribe_now__button {
+    display: flex;
+}
 .subscribe_button  {
     font-weight: 700;
     font-size: 16px;
     line-height: 25px;
-    margin-top: 60px;
     padding: 17px 65px;
     background: #F53838;
     border-radius: 10px;
     border: 1px solid #F53838;
     color: #FFFFFF;
+    box-shadow: 0 20px 15px -15px #F53838;
+    cursor: pointer;
 }
 
-.subscribe_button:hover {
-    box-shadow: 0 20px 15px -15px #F53838;
-}
 
 .footer_container {
     margin-top: 120px;
@@ -457,7 +586,7 @@ body {
 
 .contact_links {
     background-color: red;
-    width: 33.8px;
+    width: 34px;
     height: 33.8px;
     border-radius: 50%;
     box-sizing: border-box;
@@ -490,7 +619,7 @@ body {
 }
 
 .footer_list a{
-    text-decoration: none;
+    text-decoration: underline;
     color: #4F5665;
     font-weight: 400;
 }
